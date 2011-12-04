@@ -34,7 +34,7 @@ class OrderNumberGenerator(Base):
         """
         self.last += 1
         self.save()
-        if formatted:
+        if formatted and self.format:
             return self.format % self.last
         else:
             return self.last
