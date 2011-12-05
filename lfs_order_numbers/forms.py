@@ -10,4 +10,4 @@ class OrderNumberGeneratorForm(forms.ModelForm):
     """
     class Meta:
         model = OrderNumberGenerator
-        fields = ("format", "last")
+        exclude = ("id", )
