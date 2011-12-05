@@ -11,16 +11,12 @@ class OrderNumberGenerator(Base):
 
     **Attributes:**
 
-    id
-        The primary key of the order number.
-
     last
         The last stored/returned order number.
 
     format
         The format of the integer part of the order number.
     """
-    id = models.CharField(primary_key=True, max_length=20)
     last = models.IntegerField(_(u"Last order number"), default=0)
     format = models.CharField(blank=True, max_length=20)
 
