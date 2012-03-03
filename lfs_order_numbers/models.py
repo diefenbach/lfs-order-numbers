@@ -1,13 +1,15 @@
 # django imports
-from django.utils.translation import ugettext_lazy as _
+from django import forms
 from django.db import models
+from django.utils.translation import ugettext_lazy as _
 
 # lfs imports
 from lfs.plugins import OrderNumberGenerator as Base
 
 
 class OrderNumberGenerator(Base):
-    """Generates order numbers and saves the last one.
+    """
+    Generates order numbers and saves the last one.
 
     **Attributes:**
 
