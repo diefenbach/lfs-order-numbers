@@ -17,8 +17,8 @@ class OrderNumberGenerator(Base):
     format
         The format of the integer part of the order number.
     """
-    last = models.IntegerField(_(u"Last order number"), default=0)
-    format = models.CharField(blank=True, max_length=20)
+    last = models.IntegerField(_(u"Last Order Number"), default=0)
+    format = models.CharField(_(u"Format"), blank=True, max_length=20)
 
     def get_next(self, formatted=True):
         """Returns the next order number.
