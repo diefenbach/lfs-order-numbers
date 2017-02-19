@@ -1,9 +1,6 @@
-# django imports
-from django import forms
 from django.db import models
 from django.utils.translation import ugettext_lazy as _
 
-# lfs imports
 from lfs.plugins import OrderNumberGenerator as Base
 
 
