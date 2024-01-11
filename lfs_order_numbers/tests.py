@@ -6,9 +6,9 @@ from models import OrderNumberGenerator
 
 
 class OrderNumberTestCase(TestCase):
-    """Tests order numbers.
-    """
-    fixtures = ['lfs_shop.xml']
+    """Tests order numbers."""
+
+    fixtures = ["lfs_shop.xml"]
 
     def setUp(self):
         self.sn = OrderNumberGenerator.objects.create(
