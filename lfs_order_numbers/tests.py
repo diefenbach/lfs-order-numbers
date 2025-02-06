@@ -2,7 +2,7 @@
 from django.test import TestCase
 
 # lfs_serial_numbers imports
-from models import OrderNumberGenerator
+from .models import OrderNumberGenerator
 
 
 class OrderNumberTestCase(TestCase):
